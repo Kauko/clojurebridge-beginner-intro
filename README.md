@@ -114,6 +114,17 @@ Sometimes we don't even really care about the implementation details.
 10x + 16
 ```
 
+With Clojure, this would look something like this
+
+```
+(def result (+ 5 10))
+
+(defn doSomething [x]
+    (+ (* 10 x) 16))
+    
+(def anotherResult (doSomething 7));
+```
+
 This may look familiar to some of you:
 
 ```
@@ -124,15 +135,4 @@ function doSomething(x) {
 }
 
 var anotherResult = doSomething(7);
-```
-
-With Clojure, this would look something like this
-
-```
-(def result (+ 5 10))
-
-(defn doSomething [x]
-    (+ (* 10 x) 16))
-    
-(def anotherResult (doSomething 7));
 ```
